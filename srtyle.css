@@ -30,6 +30,7 @@
  font-weight: 700;
  border: 1px solid #fd6e0a;
  cursor: pointer;
+ background: none;
 }
 .btn-parent{
   display: flex;
@@ -97,4 +98,52 @@ nav ul li a{
   font-size: 18px;
   color: #757575FF;
   margin-top: 34px;
+}
+/* about us css */
+
+.about-parent{
+  background: #fff8f3FF;
+  margin: 130px auto;
+  padding: 156px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+.about-box-childs{
+  display: flex;
+  justify-content: space-between;
+  /* gap: 45px; */
+  padding: 40px;
+
+}
+
+/* what i do portion */
+
+.what-i-do-parent{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+
+
+}
+.what-i-do-card-container{
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+.what-i-do-card{
+  box-shadow: 0px 6px 50px 0px #0000000F;
+  text-align: left;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap:30px ;
+
+}
+.what-i-do-card>img{
+   width: 44px;
+   height: 44px;
+    
 }
