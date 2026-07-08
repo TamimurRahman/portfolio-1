@@ -1,110 +1,108 @@
-*{
+* {
   padding: 0;
   margin: 0;
   font-family: "Open Sans", sans-serif;
-  box-sizing:border-box;
+  box-sizing: border-box;
 }
-.root-parent{
-  background: #fff8f3FF;
+.root-parent {
+  background: #fff8f3ff;
 }
 /* shared style */
-.common-btn{
- background-color: #fd6e0aFF;
- height: 64px;
- width: 150px;
- border-radius: 5px;
- border: none;
- font-size: 20px;
- color: white;
- font-weight: 700;
- cursor: pointer;
+.common-btn {
+  background-color: #fd6e0aff;
+  height: 64px;
+  width: 150px;
+  border-radius: 5px;
+  border: none;
+  font-size: 20px;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
 }
-.outline-btn{
- /* background-color: #fd6e0aFF; */
- height: 64px;
- width: 150px;
- border-radius: 5px;
- border: none;
- font-size: 20px;
- color: #fd6e0a;
- font-weight: 700;
- border: 1px solid #fd6e0a;
- cursor: pointer;
- background: none;
+.outline-btn {
+  /* background-color: #fd6e0aFF; */
+  height: 64px;
+  width: 150px;
+  border-radius: 5px;
+  border: none;
+  font-size: 20px;
+  color: #fd6e0a;
+  font-weight: 700;
+  border: 1px solid #fd6e0a;
+  cursor: pointer;
+  background: none;
 }
-.btn-parent{
+.btn-parent {
   display: flex;
   gap: 30px;
   margin-top: 30px;
 }
-.container{
+.container {
   max-width: 1200px;
   margin: auto;
 }
-img{
+img {
   /* max width is very important to image fit in the container */
-  max-width: 100%;  
+  max-width: 100%;
   /* unexpected gap cole jabe image theke */
   /* display: block; */
 }
 
-nav{
- 
+nav {
   display: flex;
   justify-content: space-between;
   padding: 12px 0;
   /* border: 2px solid red; */
   display: hide;
 }
-nav ul{
+nav ul {
   display: flex;
   /* justify-content: space-between; */
   list-style: none;
-  gap:51px;
+  gap: 51px;
   align-items: center;
-
 }
-nav ul li a{
+nav ul li a {
   text-decoration: none;
   font-size: 20px;
-  color: #474747FF;
+  color: #474747ff;
   font-weight: 400;
 }
-.logo{
+.logo {
   /* font-weight: 800; */
   font-size: 45px;
 }
-.logo-r{
-  color: #fd6e0aFF;
+.logo-r {
+  color: #fd6e0aff;
 }
 
 /* Hero section style */
-.hero-parent{
+.hero-parent {
   display: flex;
   align-items: center;
   border: 1px solid red;
   justify-content: space-between;
 }
-.hero-left h2{
+.hero-left h2 {
   font-size: 85px;
   /* font-weight: bold; */
   /* margin-left: 0px; */
   /* padding: 0; */
 }
-.hero-left-p1{
+.hero-left-p1 {
   font-size: 45px;
-  color: #474747FF;
+  color: #474747ff;
 }
 
-.hero-left-p2{
+.hero-left-p2 {
   font-size: 18px;
-  color: #757575FF;
+  color: #757575ff;
   margin-top: 34px;
 }
 /* about us css */
 
-.about-parent{
-  background: #fff8f3FF;
+.about-parent {
+  background: #fff8f3ff;
   margin: 130px auto;
   padding: 156px;
   text-align: center;
@@ -112,92 +110,137 @@ nav ul li a{
   flex-direction: column;
   gap: 36px;
 }
-.about-box-childs{
+.about-box-childs {
   display: flex;
   justify-content: space-between;
   /* gap: 45px; */
   padding: 40px;
-
 }
 
 /* what i do portion */
 
-.what-i-do-parent{
+.what-i-do-parent {
   text-align: center;
   display: flex;
   flex-direction: column;
   gap: 36px;
-
-
 }
-.what-i-do-card-container{
+.what-i-do-card-container {
   display: flex;
   flex-direction: row;
   gap: 24px;
 }
-.what-i-do-card{
-  box-shadow: 0px 6px 50px 0px #0000000F;
+.what-i-do-card {
+  box-shadow: 0px 6px 50px 0px #0000000f;
   text-align: left;
   padding: 30px;
   display: flex;
   flex-direction: column;
-  gap:30px ;
-
+  gap: 30px;
 }
-.what-i-do-card>img{
-   width: 44px;
-   height: 44px;
-    
+.what-i-do-card > img {
+  width: 44px;
+  height: 44px;
 }
 
 /* Gallery section */
-.my-amazing-parent{
+.my-amazing-parent {
   text-align: center;
   margin: 130px auto;
 }
-.gallery{
+.gallery {
   /* display: inline; */
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   margin-top: 56px;
   gap: 24px;
   grid-auto-rows: 250px;
-  grid-template-areas: 
-  "one two three"
-  "four two six"
-  "four five six"
-  ;
-  
+  grid-template-areas:
+    "one two three"
+    "four two six"
+    "four five six";
 }
-.gallery img{
+.gallery img {
   border: 1px solid red;
-    /* object-fit: cover; */
-    height: 100%;
-    width: 100%;
-    object-fit:fill;
+  /* object-fit: cover; */
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
 }
 
 /* extra code  */
-.gallery > div{
-    border: 2px solid blue;
-     background: yellow;
+.gallery > div {
+  border: 2px solid blue;
+  background: yellow;
 }
 
-.box1{
+.box1 {
   grid-area: one;
 }
-.box2{
+.box2 {
   grid-area: two;
 }
-.box3{
+.box3 {
   grid-area: three;
 }
-.box4{
+.box4 {
   grid-area: four;
 }
-.box5{
+.box5 {
   grid-area: five;
 }
-.box6{
+.box6 {
   grid-area: six;
+}
+
+/* footer section */
+.footer-parent {
+  background-color: #fff8f3ff;
+  padding: 130px 230px;
+}
+footer {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 177px;
+}
+.left-footer{
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+.footer-icons{
+  display: flex;
+  gap: 24px ;
+}
+.left-footer p{
+  width: 562px;
+  color: #474747FF;
+  font-size: 16px;
+}
+.left-footer h2{
+  font-size: 35px;
+}
+.right-footer{
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+
+.right-footer h2{
+  font-size: 35px;
+}
+
+.right-footer form{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+form input{
+  border: none;
+  padding: 18px;
+}
+
+form textarea{
+  border: none;
+  padding: 18px 0px 0px 30px;
 }
