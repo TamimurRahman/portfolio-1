@@ -44,6 +44,8 @@
 img{
   /* max width is very important to image fit in the container */
   max-width: 100%;  
+  /* unexpected gap cole jabe image theke */
+  /* display: block; */
 }
 
 nav{
@@ -146,4 +148,56 @@ nav ul li a{
    width: 44px;
    height: 44px;
     
+}
+
+/* Gallery section */
+.my-amazing-parent{
+  text-align: center;
+  margin: 130px auto;
+}
+.gallery{
+  /* display: inline; */
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  margin-top: 56px;
+  gap: 24px;
+  grid-auto-rows: 250px;
+  grid-template-areas: 
+  "one two three"
+  "four two six"
+  "four five six"
+  ;
+  
+}
+.gallery img{
+  border: 1px solid red;
+    /* object-fit: cover; */
+    height: 100%;
+    width: 100%;
+    object-fit:fill;
+}
+
+/* extra code  */
+.gallery > div{
+    border: 2px solid blue;
+     background: yellow;
+}
+
+.box1{
+  grid-area: one;
+}
+.box2{
+  grid-area: two;
+}
+.box3{
+  grid-area: three;
+}
+.box4{
+  grid-area: four;
+}
+.box5{
+  grid-area: five;
+}
+.box6{
+  grid-area: six;
 }
