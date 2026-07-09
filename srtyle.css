@@ -4,10 +4,11 @@
   font-family: "Open Sans", sans-serif;
   box-sizing: border-box;
 }
+
+/* shared style */
 .root-parent {
   background: #fff8f3ff;
 }
-/* shared style */
 .common-btn {
   background-color: #fd6e0aff;
   height: 64px;
@@ -80,7 +81,6 @@ nav ul li a {
 .hero-parent {
   display: flex;
   align-items: center;
-  border: 1px solid red;
   justify-content: space-between;
 }
 .hero-left h2 {
@@ -99,6 +99,27 @@ nav ul li a {
   color: #757575ff;
   margin-top: 34px;
 }
+
+/* hero right side */
+.hero-right{
+    position:relative;
+    width:1036px;
+    height:518px;
+}
+.circle{
+    position:absolute;
+    bottom:0;
+    right:0;
+    width:100%;
+}
+.person{
+    position:absolute;
+    bottom:0;
+    right:0;
+    height:100%;
+    width: 75%;
+}
+
 /* about us css */
 
 .about-parent {
@@ -243,4 +264,51 @@ form input{
 form textarea{
   border: none;
   padding: 18px 0px 0px 30px;
+}
+
+/* resume summary and shared style*/
+
+.resume-parent{
+  margin: 130px auto;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  /* max-width: 1200px; */
+  
+}
+.summary-resume{
+  /* display: grid;
+  grid-template-columns: repeat(2,1fr); */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 120px;
+  margin-bottom:50px ;
+  gap:71px
+}
+
+.summary-resume .resume-content{
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+.content h3{
+  font-size: 25px;
+  color: #474747FF;
+}
+.content> p:first-of-type{
+  font-size: 20px;
+  color: #757575FF;
+  margin-top:14px;
+}
+.content .resume-pera{
+  font-size: 16px;
+  color: #757575FF;
+  margin:23px 0 ;
+  width: 50%px;
+}
+.content hr{
+
+  border: 1px solid #d1d1d1FF; ;
 }

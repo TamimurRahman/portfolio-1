@@ -1,60 +1,37 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style>
-    .gallery{
-      display: grid;
-      grid-template-columns: repeat(3,1fr);
-    }
-    img{
-      display: block;
-    }
-  </style>
-</head>
-<body>
-      <section class="my-amazing-parent container">
-      <h2>My amazing section</h2>
-      <div class="gallery">
-        <div>
-          <img
-            src="/b14-portfolio-resources/images/amazing works/Rectangle 8.png"
-            alt=""
-          />
-        </div>
-        <div>
-          <img
-            src="/b14-portfolio-resources/images/amazing works/Rectangle 9.png"
-            alt=""
-          />
-        </div>
-        <div>
-          <img
-            src="/b14-portfolio-resources/images/amazing works/Rectangle 10.png"
-            alt=""
-          />
-        </div>
-        <div>
-          <img
-            src="/b14-portfolio-resources/images/amazing works/Rectangle 11.png"
-            alt=""
-          />
-        </div>
-        <div>
-          <img
-            src="/b14-portfolio-resources/images/amazing works/Rectangle 12.png"
-            alt=""
-          />
-        </div>
-        <div>
-          <img
-            src="/b14-portfolio-resources/images/amazing works/Rectangle 13.png"
-            alt=""
-          />
-        </div>
-      </div>
-    </section>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .hero-image {
+        position: relative;
+        width: 500px;
+        height: 600px;
+      }
+
+      .circle {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+      }
+
+      .person {
+        position: absolute;
+        bottom: 0;
+        right: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hero-image">
+      <img
+        class="circle"
+        src="./b14-portfolio-resources/images/header_bg.png"
+      />
+      <img class="person" src="./b14-portfolio-resources/images/hardy.png" />
+    </div>
+  </body>
 </html>
